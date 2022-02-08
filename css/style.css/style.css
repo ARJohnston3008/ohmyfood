@@ -1,0 +1,99 @@
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #eae7e7;
+  padding: 10px;
+  box-shadow: 0px 1px inset rgba(68, 68, 68, 0.2), 0 2px inset rgba(36, 36, 36, 0.19);
+}
+.location i {
+  padding-right: 10px;
+}
+
+.explore-box {
+  background-color: #f8f7f7;
+}
+.explore-box h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.explore-box p {
+  color: #4a4040;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.explore-box button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  background-image: linear-gradient(171deg, #ff79da 0%, #9356dc 60%);
+  height: 2.5rem;
+  color: white;
+  border-radius: 100px;
+  padding-top: 0.7rem;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.instruction-label {
+  display: flex;
+  flex-direction: row;
+  background-color: #f1efef;
+  width: 80%;
+}
+.instruction-label .number-circle {
+  width: 20px;
+  height: 20px;
+  background: #9356DC;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-size: 12px;
+}
+
+.newlabel {
+  width: 100px;
+  height: 50px;
+  background-color: #99E2D0;
+  color: #278870;
+  padding: 1.5% 8% 1.5% 8%;
+  position: relative;
+  top: 40px;
+  left: 200px;
+  font-weight: 600;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5%;
+  width: 85%;
+}
+.card__picture {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.card__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card__heart {
+  font-size: 20px;
+  color: linear-gradient(171deg, #ff79da 0%, #9356dc 60%);
+  padding-right: 5%;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: x-large;
+}
+
+/*# sourceMappingURL=style.css.map */
