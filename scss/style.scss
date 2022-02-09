@@ -1,5 +1,5 @@
 
-/* */
+/* ----- */
 
 $label-color: #99E2D0;
 
@@ -127,10 +127,27 @@ $label-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 }
 
-
-
+@mixin footer-text {
+    color: white;
+    margin: 2% 6% 0% 3%;
+}
 
 h4 {
+    @include footer-text;
     font-size: x-large;
+    margin: 0;
+    padding: 4% 3%;
+}
+
+footer {
+    background-color: darken($text-background, 75%);
+
+    li{
+        @include footer-text;
+        i {
+            width: 20px;
+            padding-right: 2%;
+        }
+    }
 }
 

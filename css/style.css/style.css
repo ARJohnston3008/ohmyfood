@@ -1,3 +1,4 @@
+/* ----- */
 .location {
   display: flex;
   flex-direction: row;
@@ -93,7 +94,23 @@
 }
 
 h4 {
+  color: white;
+  margin: 2% 6% 0% 3%;
   font-size: x-large;
+  margin: 0;
+  padding: 4% 3%;
+}
+
+footer {
+  background-color: #3c3535;
+}
+footer li {
+  color: white;
+  margin: 2% 6% 0% 3%;
+}
+footer li i {
+  width: 20px;
+  padding-right: 2%;
 }
 
 /*# sourceMappingURL=style.css.map */
