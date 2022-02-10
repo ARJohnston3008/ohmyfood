@@ -2,28 +2,15 @@ html{
     font-family: Roboto;
 }
 
-h1 {
-    font-family: Shrikhand;
-    display: flex;
-    justify-content: center;
-}
 
-h4 {
-    font-family: Shrikhand;
-}
+
+
 
 /*
     purple --  #9356DC;
     pink  --  #FF79DA;
     green  --  #99E2D0;
 */
-
-
-.explore-box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 
 
 

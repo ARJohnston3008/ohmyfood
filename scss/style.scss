@@ -1,6 +1,10 @@
 
 /* ----- */
 
+html{
+    font-family: Roboto;
+}
+
 $label-color: #99E2D0;
 
 $main-color: #9356DC;
@@ -12,6 +16,13 @@ $text-background: rgb(248, 247, 247);
 $gradient-color: linear-gradient(171deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 60%);
 
 $label-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+h1 {
+    font-family: Shrikhand;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+}
 
 @mixin centre-flex {
     display: flex;
@@ -41,7 +52,7 @@ $label-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .location {
     @include centre-flex;
     background-color: darken($text-background, 6%);
-    padding: 10px;
+    padding: 15px;
     box-shadow: 0px 1px inset rgba(68, 68, 68, 0.2), 0 2px inset rgba(36, 36, 36, 0.19);
     i {
         padding-right: 10px;
@@ -50,29 +61,38 @@ $label-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 .explore-box {
     background-color: $text-background;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     h2 {
         @include centre-flex;
+        margin: 8% 0 8% 0;
     }
 
     p {
-        color: darken($text-background, 70%);
+        color: darken($text-background, 55%);
         @include centre-flex;
+        margin-bottom: 1%;
     }
 
     button {
         @include gradient-button;
         width: 50%;
-        margin: 0 auto;
+        margin: 6% auto 12% auto;
+       
  
     }
 }
 
-.instruction-label {
-    display:flex;
+
+h3 {
+    margin-left: 8%;
+}
+
+.instruction-container {
+    display: flex;
     flex-direction: row;
-    background-color: darken($text-background, 3%);
-    width: 80%;
 
 
 .number-circle {
@@ -84,10 +104,35 @@ $label-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     line-height: 20px;
     color: white;
     font-size: 12px;
-}
+    position: relative;
+    top: 25px;
+    left:29px;
 
 }
 
+.instruction-label {
+    display:flex;
+    flex-direction: row;
+    background-color: darken($text-background, 3%);
+    width: 70%;
+    margin: 0 auto;
+    padding: 7%;
+    border-radius: 25px;
+    margin-bottom: 6%;
+    box-shadow: $label-shadow;
+
+span {
+    font-weight: 500;
+}
+
+
+i {
+    color: darken($text-background, 40%);
+    padding-right: 5%;
+}
+
+}
+}
 
 
 .newlabel {
@@ -98,30 +143,39 @@ $label-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1.5% 8% 1.5% 8%;
     position: relative;
     top: 40px;
-    left: 200px;
+    left: 225px;
     font-weight: 600;
 }
+
+
 
 .card {
     box-shadow: $label-shadow;
     border-radius: 5%;
     width: 85%;
+    margin: 0 auto;
+    margin-bottom: 5%;
 
 
     &__picture {
         width: 100%;
-        height: 180px;
+        height: 160px;
         border-radius: 15px 15px 0px 0px;
         object-fit: cover;
+        object-position: 0% 62%;
     }
 
     &__title {
         @include spaced-flex;
+        padding: 4% 0 0% 5%;
+    }
+
+    &__city{
+        padding: 1% 0 6% 5%;
     }
 
     &__heart {
         font-size: 20px;
-        color: $gradient-color;
         padding-right: 5%;
         font-weight: 600;
     }
@@ -129,25 +183,33 @@ $label-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 @mixin footer-text {
     color: white;
-    margin: 2% 6% 0% 3%;
+    margin: 0% 0% 0% 7%;
+    font-size: 13px;
 }
 
 h4 {
     @include footer-text;
-    font-size: x-large;
-    margin: 0;
-    padding: 4% 3%;
+    font-family: Shrikhand;
+    font-size: 16px;
+    padding: 5% 0%;
+    font-weight: 400;
 }
 
 footer {
     background-color: darken($text-background, 75%);
+    padding-bottom: 10%;
+    margin-top: 15%;
 
     li{
         @include footer-text;
+        padding-bottom: 2%;
         i {
             width: 20px;
             padding-right: 2%;
         }
+
     }
+
 }
+
 
