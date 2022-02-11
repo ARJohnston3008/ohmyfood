@@ -1,4 +1,24 @@
 /* ----- */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
 html {
   font-family: Roboto;
 }
@@ -14,6 +34,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #eae7e7;
   padding: 15px;
   box-shadow: 0px 1px inset rgba(68, 68, 68, 0.2), 0 2px inset rgba(36, 36, 36, 0.19);
@@ -29,22 +50,22 @@ h1 {
   flex-direction: column;
 }
 .explore-box h2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  text-align: center;
   margin: 8% 0 8% 0;
 }
 .explore-box p {
   color: #726464;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  text-align: center;
+  width: 80%;
   margin-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .explore-box button {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
   background-image: linear-gradient(171deg, #ff79da 0%, #9356dc 60%);
@@ -97,6 +118,12 @@ h3 {
   padding-right: 5%;
 }
 
+@media screen and (min-width: 992px) {
+  .desktop-instructions {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .newlabel {
   width: 100px;
   height: 50px;
@@ -107,6 +134,12 @@ h3 {
   top: 40px;
   left: 225px;
   font-weight: 600;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -127,7 +160,13 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 4% 0 0% 5%;
+  padding: 4% 0 0 5%;
+}
+.card__title--new {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 0 5%;
 }
 .card__city {
   padding: 1% 0 6% 5%;
@@ -138,6 +177,12 @@ h3 {
   font-weight: 600;
 }
 
+@media screen and (min-width: 992px) {
+  .card {
+    width: 30%;
+    margin: 0 8% 5% 8%;
+  }
+}
 h4 {
   color: white;
   margin: 0% 0% 0% 7%;
@@ -162,6 +207,25 @@ footer li {
 footer li i {
   width: 20px;
   padding-right: 2%;
+}
+
+@media screen and (min-width: 992px) {
+  h4 {
+    font-size: 20px;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+  footer li {
+    font-size: 16px;
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
