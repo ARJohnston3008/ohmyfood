@@ -78,6 +78,15 @@ h1 {
   margin: 6% auto 12% auto;
 }
 
+@media screen and (min-width: 992px) {
+  .explore-box h2 {
+    margin: 3% 0 3% 0;
+  }
+  .explore-box button {
+    width: 20%;
+    margin: 2% auto 4% auto;
+  }
+}
 h3 {
   margin-left: 8%;
 }
@@ -110,10 +119,10 @@ h3 {
   margin-bottom: 6%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.instruction-container .instruction-label span {
+.instruction-container .instruction-label__text {
   font-weight: 500;
 }
-.instruction-container .instruction-label i {
+.instruction-container .instruction-label__icon {
   color: #998a8a;
   padding-right: 5%;
 }
@@ -121,7 +130,12 @@ h3 {
 @media screen and (min-width: 992px) {
   .desktop-instructions {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .instruction-container {
+    width: 30%;
+    min-width: 330px;
   }
 }
 .newlabel {
@@ -226,6 +240,19 @@ footer li i {
     font-size: 16px;
     width: 40%;
   }
+}
+.link-heading {
+  display: flex;
+  flex-direction: row;
+  margin: 18.76px 0 18.76px 0;
+}
+.link-heading a {
+  display: flex;
+  align-items: center;
+  margin-left: 3%;
+}
+.link-heading h1 {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
