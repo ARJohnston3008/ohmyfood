@@ -1,4 +1,7 @@
 
+@import '_reset';
+@import '_colors';
+
 /* ----- */
 
 a:link { text-decoration: none; }
@@ -38,6 +41,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 28px;
+    /* color: $label-color; */
 }
 
 @mixin centre-flex {
