@@ -1,14 +1,15 @@
-.button {
-    color: purple;
-}
-
 $label-color: #99E2D0;
 
-$main-color:  #9356DC;
+$main-color: #9356DC;
 
 $secondary-color: #FF79DA;
 
-.goal {
-    color: green;
-}
+$text-background: rgb(248, 247, 247);
 
+$grey-text: darken($text-background, 55%);
+
+$gradient-color: linear-gradient(171deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 60%);
+
+$label-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+$menu-main-color: darken($text-background, 2%);

@@ -1,6 +1,7 @@
 
 @import '_reset';
 @import '_colors';
+@import '_mixins';
 
 /* applies until max width 768 */
 /* @import '_mobile'; */
@@ -25,21 +26,7 @@ html{
     font-family: Roboto;
 }
 
-$label-color: #99E2D0;
 
-$main-color: #9356DC;
-
-$secondary-color: #FF79DA;
-
-$text-background: rgb(248, 247, 247);
-
-$grey-text: darken($text-background, 55%);
-
-$gradient-color: linear-gradient(171deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 60%);
-
-$label-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-$menu-main-color: darken($text-background, 2%);
 
 
 
@@ -50,31 +37,8 @@ h1 {
     font-size: 28px;
 }
 
-@mixin centre-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-@mixin spaced-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 
-@mixin gradient-button {
-    @include centre-flex;
-    box-shadow: $label-shadow;
-    border: none;
-    background-image: $gradient-color;
-    height: 2.5rem;
-    color: white;
-    border-radius: 100px;
-    padding-top: 0.7rem;
-    cursor: pointer;
-}
 
 .location {
     @include centre-flex;
@@ -110,8 +74,6 @@ h1 {
         @include gradient-button;
         width: 50%;
         margin: 6% auto 12% auto;
-       
- 
     }
 }
 
@@ -133,6 +95,12 @@ h1 {
 
 h3 {
     margin-left: 8%;
+}
+
+@media screen and(min-width:600px) and (max-width:992px) {
+    h3 {text-align: center;
+        margin-left: 0%;
+    }
 }
 
 .instruction-container {
@@ -167,6 +135,13 @@ h3 {
     border-radius: 25px;
     margin-bottom: 6%;
     box-shadow: $label-shadow;
+    &:hover {
+        background-color: lighten($main-color, 35%);
+        .instruction-label__icon{
+            color: $main-color;
+    }    
+    }
+
 
 &__text {
     font-weight: 500;
@@ -180,6 +155,9 @@ h3 {
 
 }
 }
+
+
+
 
 @media screen and(min-width:600px){
     .instruction-container {
@@ -309,11 +287,7 @@ h3 {
     
     
 
-@mixin footer-text {
-    color: white;
-    margin: 0% 0% 0% 7%;
-    font-size: 13px;
-}
+
 
 h4 {
     @include footer-text;
@@ -469,7 +443,7 @@ h5 {
 
 .menu-item {
     background-color: white;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     border-radius: 15px;
     margin-bottom: 6%;
@@ -519,6 +493,12 @@ h5 {
     position: relative;
 }
 
+h6 {
+    margin:0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 
 .menu-item1 {
     background-color: white;
@@ -534,8 +514,10 @@ h5 {
     &__list {
         width: 100%;
     }
+
     
    &__food {
+       font-size: 16px;
         padding: 5%;
    }
 
@@ -556,7 +538,7 @@ h5 {
        width: 0%;
        transform-origin: 100%;
        transform: scaleX(0);
-       transition: 0.5s;
+       transition: 1s;
    }
     
 
@@ -592,7 +574,7 @@ h5 {
 
 .menu-item1:hover  .tick-circle {
     transform: rotate(360deg);
-    transition-duration: 500ms;
+    transition-duration: 1s;
 }
 
 

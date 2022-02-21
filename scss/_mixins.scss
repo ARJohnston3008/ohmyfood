@@ -1,0 +1,33 @@
+@mixin centre-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+@mixin spaced-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@mixin gradient-button {
+    @include centre-flex;
+    box-shadow: $label-shadow;
+    border: none;
+    background: $gradient-color;
+    height: 2.5rem;
+    color: white;
+    border-radius: 100px;
+    padding-top: 0.7rem;
+    cursor: pointer;
+}
+
+
+@mixin footer-text {
+    color: white;
+    margin: 0% 0% 0% 7%;
+    font-size: 13px;
+}
