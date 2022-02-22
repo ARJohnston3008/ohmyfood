@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -46,37 +45,6 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-/* applies until max width 768 */
-/* @import '_mobile'; */
-/* overrides from min width 990px */
-/* @import '_tablet'; */
-/* pverrodes from min at 991 */
-/* @import '_desktop'; */
-/* ----- */
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
-
-a {
-  color: inherit;
-}
-
-html {
-  font-family: Roboto;
 }
 
 h1 {
@@ -148,7 +116,7 @@ h3 {
 }
 
 @media screen and (min-width: 600px) and (max-width: 992px) {
-  h3 {
+  .howitworks {
     text-align: center;
     margin-left: 0%;
   }
@@ -212,6 +180,11 @@ h3 {
     min-width: 330px;
   }
 }
+@media screen and (min-width: 750px) and (max-width: 992px) {
+  h3 {
+    margin-left: 4%;
+  }
+}
 .article-container {
   display: flex;
   flex-direction: row;
@@ -234,6 +207,16 @@ h3 {
   object-fit: cover;
   object-position: 0% 62%;
 }
+.card__newlabel {
+  background-color: #99E2D0;
+  color: #278870;
+  padding: 2% 9%;
+  position: absolute;
+  text-align: center;
+  top: 5%;
+  right: 5%;
+  font-weight: 600;
+}
 .card__title {
   display: flex;
   flex-direction: row;
@@ -249,12 +232,6 @@ h3 {
 .card__city {
   padding: 1% 0 6% 5%;
 }
-.card__heart {
-  font-size: 20px;
-  padding-right: 5%;
-  font-weight: 500;
-  color: blue;
-}
 
 @media screen and (min-width: 750px) {
   .card {
@@ -268,43 +245,33 @@ h3 {
     margin: 0 8% 5% 8%;
   }
 }
-.newlabel {
-  background-color: #99E2D0;
-  color: #278870;
-  padding: 2% 9%;
-  position: absolute;
-  text-align: center;
-  top: 5%;
-  right: 5%;
-  font-weight: 600;
-}
-
 .card__heart2 {
   font-size: 24px;
-  font-weight: 500;
   margin-right: 20px;
   z-index: 1;
   position: relative;
+}
+.card__heart2:hover {
+  opacity: 0;
+  transition: 1s;
 }
 .card__heart2:hover + .card__heart2--liked {
   opacity: 1;
   transition: 1s;
 }
-
 .card__heart2--liked {
   font-size: 24px;
   margin-right: 20px;
-  font-weight: 600;
-  color: blue;
   z-index: -1;
   position: absolute;
   right: 0%;
   opacity: 0;
 }
-
-.card__heart2:hover {
-  opacity: 0;
-  transition: 1s;
+.card__heart2--liked:before {
+  background: linear-gradient(171deg, #ff79da 0%, #9356dc 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h4 {
@@ -349,13 +316,6 @@ footer li i {
     width: 40%;
   }
 }
-/*--------------------------------------------------------------------------
-
-
-Restaurant page
-
-
----------------------------------------------------------------------------*/
 .link-heading {
   display: flex;
   flex-direction: row;
@@ -408,7 +368,6 @@ Restaurant page
 .title__heart--liked {
   font-size: 24px;
   font-weight: 600;
-  color: linear-gradient(171deg, #ff79da 0%, #9356dc 60%);
   z-index: 1;
   position: absolute;
   left: 85%;
@@ -427,7 +386,7 @@ Restaurant page
   -webkit-text-fill-color: transparent;
 }
 
-​ h5 {
+h5 {
   font-weight: 200;
   font-size: 16px;
   padding: 3% 0 2% 0%;
@@ -440,14 +399,7 @@ Restaurant page
 }
 .h5-container h5:nth-child(1) {
   border-bottom: 3px solid #99E2D0;
-}
-
-.tick-box {
-  background-color: #99E2D0;
-  height: 100%;
-  border-radius: 0 15px 15px 0;
-  overflow: hidden;
-  position: relative;
+  padding-bottom: 10px;
 }
 
 h6 {
@@ -492,6 +444,14 @@ h6 {
   transition: 1s;
 }
 
+.tick-box {
+  background-color: #99E2D0;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  overflow: hidden;
+  position: relative;
+}
+
 .tick-circle {
   color: white;
   font-size: 20px;
@@ -511,10 +471,6 @@ h6 {
   transition-duration: 1s;
 }
 
-/*
--------------------------------------------------------------
-
-*/
 .order {
   display: flex;
   flex-direction: row;
@@ -536,20 +492,35 @@ h6 {
   transition-duration: 1000ms;
 }
 
-/*
-
-
-transform: scaleX(0);
-
-
-.menu-item1 {
-    &:active {
-        .tick-icon {
-            transform: scaleX(1);
-        }
-    }
+/* applies until max width 768 */
+/* @import '_mobile'; */
+/* overrides from min width 990px */
+/* @import '_tablet'; */
+/* pverrodes from min at 991 */
+/* @import '_desktop'; */
+/* ----- */
+a:link {
+  text-decoration: none;
 }
 
-*/
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+html {
+  font-family: Roboto;
+}
 
 /*# sourceMappingURL=style.css.map */

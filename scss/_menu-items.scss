@@ -1,0 +1,97 @@
+
+
+
+h6 {
+    margin:0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.menu-item1 {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 6%;
+    box-shadow: $label-shadow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__list {
+        width: 100%;
+    }
+
+    
+   &__food {
+       font-size: 16px;
+        padding: 5%;
+   }
+
+   &__sides {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+        color: $grey-text;
+        padding: 0 0 5% 5%;
+   }
+
+   &__price {
+       color: black;
+       padding-right: 5%;
+   }
+
+   &__animation {
+       width: 0%;
+       transform-origin: 100%;
+       transform: scaleX(0);
+       transition: 1s;
+   }
+    
+
+}
+
+
+
+
+.tick-box {
+    background-color: $label-color;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.tick-circle {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+
+
+.menu-item1:hover .menu-item1__animation {
+    transform: scaleX(1);
+    transition-duration: 500ms;
+    width: 20%;
+}
+
+.menu-item1:hover  .tick-circle {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+
+
+.order {
+    @include gradient-button;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20%;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+   }

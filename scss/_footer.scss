@@ -1,0 +1,47 @@
+h4 {
+    @include footer-text;
+    font-family: Shrikhand;
+    font-size: 16px;
+    padding: 5% 0%;
+    font-weight: 400;
+}
+
+footer {
+    background-color: darken($text-background, 75%);
+    padding: 5% 0 10% 0;
+
+
+
+    li{
+        @include footer-text;
+        padding-bottom: 2%;
+        i {
+            width: 20px;
+            padding-right: 2%;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    h4 {
+        font-size: 20px;
+    }
+
+    footer   {
+        padding-bottom: 5%;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+    
+    
+    li {
+        font-size: 16px;
+        width: 40%;
+    }
+}
+
+}
