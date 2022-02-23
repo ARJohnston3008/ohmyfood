@@ -1,3 +1,9 @@
+ 
+.course {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
@@ -86,12 +92,49 @@ h6 {
 }
 
 
+
+@media screen and(min-width:650px){
+    .course {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (min-width: 1120px){
+     .desktop-menu {
+        display: flex;
+    }
+    .menu-item1 {
+        height:90px;
+   
+    }
+    .course {
+        flex-direction: column;
+        margin: 0 1.5% 0 1.5%;
+        width: 35%;
+    }
+
+
+}
+
+
+
+
+
 .order {
     @include gradient-button;
     width: 50%;
     margin: 0 auto;
-    margin-top: 20%;
+    margin-top: 8%;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 1000ms;
    }
+
+@media screen and (min-width: 1120px){
+    .order {
+        width:30%;
+    }
+}
