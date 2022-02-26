@@ -532,6 +532,138 @@ h6 {
     width: 30%;
   }
 }
+.m1 {
+  animation: m1 ease 1s;
+}
+
+@keyframes m1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.m2 {
+  animation: m2 ease 2s;
+}
+
+@keyframes m2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.m3 {
+  animation: m3 ease 3s;
+}
+
+@keyframes m3 {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.m4 {
+  animation: m4 ease 4s;
+}
+
+@keyframes m4 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.m5 {
+  animation: m5 ease 5s;
+}
+
+@keyframes m5 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.m6 {
+  animation: m6 ease 6s;
+}
+
+@keyframes m6 {
+  0% {
+    opacity: 0;
+  }
+  83.3% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.m7 {
+  animation: m7 ease 7s;
+}
+
+@keyframes m7 {
+  0% {
+    opacity: 0;
+  }
+  85.7% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.m8 {
+  animation: m8 ease 8s;
+}
+
+@keyframes m8 {
+  0% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.m9 {
+  animation: m9 ease 9s;
+}
+
+@keyframes m9 {
+  0% {
+    opacity: 0;
+  }
+  88.8% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* applies until max width 768 */
 /* @import '_mobile'; */
 /* overrides from min width 990px */
