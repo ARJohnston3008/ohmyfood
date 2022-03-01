@@ -27,12 +27,13 @@ h6 {
 
     &__list {
         width: 100%;
+        transition: 1s;
     }
 
     
    &__food {
        font-size: 16px;
-        padding: 5%;
+        padding: 20px;
    }
 
    &__sides {
@@ -40,7 +41,12 @@ h6 {
        flex-direction: row;
        justify-content: space-between;
         color: $grey-text;
-        padding: 0 0 5% 5%;
+        padding: 0 0 20px 20px;
+        &-animation {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
    }
 
    &__price {
@@ -78,7 +84,10 @@ h6 {
     left: 40%;
 }
 
-
+.menu-item1:hover .menu-item1__list {
+    transition-duration: 500ms;
+    width: 80%;
+}
 
 .menu-item1:hover .menu-item1__animation {
     transform: scaleX(1);
@@ -147,6 +156,7 @@ h6 {
 
 .m1 {
     animation: m1 ease 1s;
+    animation-delay: 9.9s;
 }
 
 @keyframes m1 {
@@ -161,6 +171,7 @@ h6 {
 
 .m2 {
     animation: m2 ease 2s;
+    animation-delay: 9.9s;
 }
 
 @keyframes m2 {
@@ -180,6 +191,7 @@ h6 {
 
 .m3 {
     animation: m3 ease 3s;
+    animation-delay: 9.9s;
 }
 
 @keyframes m3 {
@@ -199,6 +211,7 @@ h6 {
 
 .m4 {
     animation: m4 ease 4s;
+    animation-delay: 9.9s;
 }
 
 @keyframes m4 {
@@ -218,6 +231,7 @@ h6 {
 
 .m5 {
     animation: m5 ease 5s;
+    animation-delay: 9.9s;
 }
 
 @keyframes m5 {
@@ -237,6 +251,7 @@ h6 {
 
 .m6 {
     animation: m6 ease 6s;
+    animation-delay: 9.9s;
 }
 
 @keyframes m6 {
@@ -256,6 +271,7 @@ h6 {
 
 .m7 {
     animation: m7 ease 7s;
+    animation-delay: 9.9s;
 }
 
 @keyframes m7 {
@@ -275,6 +291,7 @@ h6 {
 
 .m8 {
     animation: m8 ease 8s;
+    animation-delay: 9.9s;
 }
 
 @keyframes m8 {
@@ -294,6 +311,7 @@ h6 {
 
 .m9 {
     animation: m9 ease 9s;
+    animation-delay: 9.9s;
 }
 
 

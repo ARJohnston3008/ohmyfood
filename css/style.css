@@ -323,7 +323,7 @@ footer li i {
 .link-heading {
   display: flex;
   flex-direction: row;
-  margin: 18.76px 0 18.76px 0;
+  padding: 18.76px 0 18.76px 0;
 }
 .link-heading a {
   display: flex;
@@ -431,17 +431,23 @@ h6 {
 }
 .menu-item1__list {
   width: 100%;
+  transition: 1s;
 }
 .menu-item1__food {
   font-size: 16px;
-  padding: 5%;
+  padding: 20px;
 }
 .menu-item1__sides {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: #726464;
-  padding: 0 0 5% 5%;
+  padding: 0 0 20px 20px;
+}
+.menu-item1__sides-animation {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-item1__price {
   color: black;
@@ -468,6 +474,11 @@ h6 {
   position: absolute;
   top: 40%;
   left: 40%;
+}
+
+.menu-item1:hover .menu-item1__list {
+  transition-duration: 500ms;
+  width: 80%;
 }
 
 .menu-item1:hover .menu-item1__animation {
@@ -534,6 +545,7 @@ h6 {
 }
 .m1 {
   animation: m1 ease 1s;
+  animation-delay: 9.9s;
 }
 
 @keyframes m1 {
@@ -546,6 +558,7 @@ h6 {
 }
 .m2 {
   animation: m2 ease 2s;
+  animation-delay: 9.9s;
 }
 
 @keyframes m2 {
@@ -561,6 +574,7 @@ h6 {
 }
 .m3 {
   animation: m3 ease 3s;
+  animation-delay: 9.9s;
 }
 
 @keyframes m3 {
@@ -576,6 +590,7 @@ h6 {
 }
 .m4 {
   animation: m4 ease 4s;
+  animation-delay: 9.9s;
 }
 
 @keyframes m4 {
@@ -591,6 +606,7 @@ h6 {
 }
 .m5 {
   animation: m5 ease 5s;
+  animation-delay: 9.9s;
 }
 
 @keyframes m5 {
@@ -606,6 +622,7 @@ h6 {
 }
 .m6 {
   animation: m6 ease 6s;
+  animation-delay: 9.9s;
 }
 
 @keyframes m6 {
@@ -621,6 +638,7 @@ h6 {
 }
 .m7 {
   animation: m7 ease 7s;
+  animation-delay: 9.9s;
 }
 
 @keyframes m7 {
@@ -636,6 +654,7 @@ h6 {
 }
 .m8 {
   animation: m8 ease 8s;
+  animation-delay: 9.9s;
 }
 
 @keyframes m8 {
@@ -651,6 +670,7 @@ h6 {
 }
 .m9 {
   animation: m9 ease 9s;
+  animation-delay: 9.9s;
 }
 
 @keyframes m9 {
@@ -662,6 +682,163 @@ h6 {
   }
   100% {
     opacity: 1;
+  }
+}
+.loading-animation {
+  width: 0%;
+  height: 0%;
+  z-index: 500;
+  position: fixed;
+  opacity: 0;
+  background-color: #f8f7f7;
+  animation: loading-animation 10s;
+}
+
+@keyframes loading-animation {
+  0% {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  99% {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+.animation-logo {
+  position: relative;
+  top: 40%;
+  font-family: Shrikhand;
+  font-size: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.oh {
+  animation: oh ease 10s;
+}
+
+@keyframes oh {
+  0% {
+    transform: translateY(0);
+    color: #9356DC;
+    font-size: 50px;
+  }
+  10% {
+    transform: translateY(200%);
+  }
+  20% {
+    color: #FF79DA;
+  }
+  30% {
+    transform: translateY(-200%);
+  }
+  40% {
+    color: #9356DC;
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  70% {
+    transform: translateY(-100%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0%);
+    background: linear-gradient(171deg, #ff79da 0%, #9356dc 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+  }
+}
+.my {
+  animation: my ease 10s;
+}
+
+@keyframes my {
+  0% {
+    transform: translateY(0);
+    color: #FF79DA;
+    font-size: 50px;
+  }
+  10% {
+    transform: translateY(-200%);
+  }
+  20% {
+    color: #9356DC;
+  }
+  30% {
+    transform: translateY(200%);
+  }
+  40% {
+    color: #FF79DA;
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  70% {
+    transform: translateY(100%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0%);
+    background: linear-gradient(171deg, #ff79da 0%, #9356dc 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+  }
+}
+.food {
+  animation: food ease 10s;
+}
+
+@keyframes food {
+  0% {
+    transform: translateY(0);
+    color: #9356DC;
+    font-size: 50px;
+  }
+  10% {
+    transform: translateY(200%);
+  }
+  20% {
+    color: #FF79DA;
+  }
+  30% {
+    transform: translateY(-200%);
+  }
+  40% {
+    color: #9356DC;
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  70% {
+    transform: translateY(-100%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0%);
+    background: linear-gradient(171deg, #ff79da 0%, #9356dc 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
   }
 }
 /* applies until max width 768 */
