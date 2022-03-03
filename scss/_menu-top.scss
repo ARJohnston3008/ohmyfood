@@ -24,6 +24,12 @@
     object-fit: cover;
     max-height: 300px;
     object-position: 100% 60%;
+    &--gourmand {
+        object-position: 100% 70%;
+    }
+    &--bastille {
+        object-position: 100% 62%;
+    }
 }
 
 

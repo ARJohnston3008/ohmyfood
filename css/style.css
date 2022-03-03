@@ -343,6 +343,12 @@ footer li i {
   max-height: 300px;
   object-position: 100% 60%;
 }
+.menu-image--gourmand {
+  object-position: 100% 70%;
+}
+.menu-image--bastille {
+  object-position: 100% 62%;
+}
 
 .restaurant-main-section {
   background-color: #f3f2f2;
@@ -678,6 +684,22 @@ h6 {
     opacity: 0;
   }
   88.8% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.m10 {
+  animation: m10 ease 10s;
+  animation-delay: 9.9s;
+}
+
+@keyframes m10 {
+  0% {
+    opacity: 0;
+  }
+  90% {
     opacity: 0;
   }
   100% {

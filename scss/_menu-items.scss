@@ -330,3 +330,23 @@ h6 {
     }
 }
 
+.m10 {
+    animation: m10 ease 10s;
+    animation-delay: 9.9s;
+}
+
+
+@keyframes m10 {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity:0;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
