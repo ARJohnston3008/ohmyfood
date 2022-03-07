@@ -35,3 +35,12 @@
     margin: 0% 0% 0% 7%;
     font-size: 13px;
 }
+
+@mixin animation-end {
+    transform: translateY(0%);
+    background: $gradient-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}

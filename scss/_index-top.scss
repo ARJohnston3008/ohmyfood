@@ -1,7 +1,6 @@
 h1 {
     font-family: Shrikhand;
-    display: flex;
-    justify-content: center;
+    @include centre-flex;
     font-size: 28px;
 }
 

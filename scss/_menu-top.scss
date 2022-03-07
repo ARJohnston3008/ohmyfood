@@ -82,18 +82,20 @@
     }
 
 
-h5 {
-    $grey-text: darken($text-background, 70%);
-    font-weight: 200;
-    font-size: 16px;
-    padding: 3% 0 2% 0%;
-}
 
-.h5-container {
+
+.h2-container {
     display: flex;
     flex-direction: row;
     padding-left: 5%;
-    h5:nth-child(1) {
+    h2 {
+        $grey-text: darken($text-background, 70%);
+        font-weight: 200;
+        font-size: 16px;
+        padding: 3% 0 2% 0%;
+        margin: 26.72px 0px 26.72px 0px; 
+    }
+    h2:nth-child(1) {
         border-bottom: 3px solid $label-color;
         padding-bottom: 10px;
     }
