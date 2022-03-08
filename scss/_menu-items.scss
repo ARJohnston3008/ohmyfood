@@ -1,10 +1,3 @@
- 
-.course {
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 
 h6 {
@@ -108,7 +101,6 @@ h6 {
 }
 
 
-
 @media screen and (min-width: 1120px){
      .desktop-menu {
         display: flex;
@@ -122,8 +114,6 @@ h6 {
         margin: 0 1.5% 0 1.5%;
         width: 35%;
     }
-
-
 }
 
 
@@ -154,7 +144,6 @@ h6 {
 
 .m1 {
     animation: m1 ease 1s;
-    animation-delay: 9.9s;
 }
 
 @keyframes m1 {
@@ -169,7 +158,6 @@ h6 {
 
 .m2 {
     animation: m2 ease 2s;
-    animation-delay: 9.9s;
 }
 
 @keyframes m2 {
@@ -189,7 +177,6 @@ h6 {
 
 .m3 {
     animation: m3 ease 3s;
-    animation-delay: 9.9s;
 }
 
 @keyframes m3 {
@@ -209,7 +196,6 @@ h6 {
 
 .m4 {
     animation: m4 ease 4s;
-    animation-delay: 9.9s;
 }
 
 @keyframes m4 {
@@ -229,7 +215,6 @@ h6 {
 
 .m5 {
     animation: m5 ease 5s;
-    animation-delay: 9.9s;
 }
 
 @keyframes m5 {
@@ -249,7 +234,6 @@ h6 {
 
 .m6 {
     animation: m6 ease 6s;
-    animation-delay: 9.9s;
 }
 
 @keyframes m6 {
@@ -269,7 +253,6 @@ h6 {
 
 .m7 {
     animation: m7 ease 7s;
-    animation-delay: 9.9s;
 }
 
 @keyframes m7 {
@@ -289,7 +272,6 @@ h6 {
 
 .m8 {
     animation: m8 ease 8s;
-    animation-delay: 9.9s;
 }
 
 @keyframes m8 {
@@ -309,7 +291,6 @@ h6 {
 
 .m9 {
     animation: m9 ease 9s;
-    animation-delay: 9.9s;
 }
 
 
@@ -330,7 +311,6 @@ h6 {
 
 .m10 {
     animation: m10 ease 10s;
-    animation-delay: 9.9s;
 }
 
 

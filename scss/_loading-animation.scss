@@ -130,47 +130,5 @@
 
 
 .food {
-    animation: food ease 10s;
-}
-
-@keyframes food {
-    0% {
-        transform: translateY(0);
-        color: $main-color;
-        font-size: 50px;
-    }
-
-
-    10% {
-        transform: translateY(200%);
-    }
-
-    20% {
-        color: $secondary-color;
-    }
-
-    30% {
-        transform: translateY(-200%);
-    }
-
-
-    40% {
-        color: $main-color;
-    }
-
-    50% {
-        transform: translateY(100%);
-    }
-
-    70% {
-        transform: translateY(-100%);
-    }
-
-    80% {
-        transform: translateY(0%);
-    }
-
-    100% {
-        @include animation-end;
-    }
+    animation: oh ease 10s;
 }
